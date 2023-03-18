@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+</head>
+<style>
+    .parallax{
+        background-image: url(https://images.unsplash.com/photo-1678791589088-f26ed2590a21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80);
+        min-height: 500px;
+        background-attachment: fixed;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media(max-width:600px){
+       body{
+         width: 100vw;
+         height: 100vh;
+       }
+
+    }
+</style>
+<body>
+    <div>
+        <h1>Parallax</h1>
+        <p>faça scroll para ver o efeito parallax</p>
+        <p>A div funciona como uma janela, que demonstra que a imagem esta colada e não é arrastada com o scroll</p>
+    </div>
+    <div class="parallax"></div>
+    <div><p>Este div existe para permitir o scroll</p></div>
+</body>
+</html>

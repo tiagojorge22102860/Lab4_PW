@@ -58,3 +58,24 @@ footer{
         grid-template-columns: 1fr ;
         grid-template-rows: 5% 1fr 5%;
 }
+
+@media (max-width:600px) {
+    body{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        gap: 20px;
+        padding: 0px;
+        background-color: red;
+
+        grid-template-areas: 
+        "menu"
+        "main"
+        "footer";
+
+        grid-template-columns: 1fr ;
+        grid-template-rows: 10% 1fr 5%;
+        }
+
+    }
+    
