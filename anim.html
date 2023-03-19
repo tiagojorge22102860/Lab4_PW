@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+</head>
+
+<style>
+    #scale {
+      margin: 150px;
+      width: 200px;
+      height: 100px;
+      background-color: yellow;
+      border: 1px solid black;
+      transform: scale(2,3);
+    }
+    #myDiv {
+        transform: rotate(20deg);
+    }
+    @media(max-width:600px){
+       body{
+         width: 100vw;
+         height: 100vh;
+       }
+
+    }
+    #keyframe{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+    }
+    @keyframes roda {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+    }
+    #deisiSpin{
+          
+         animation-name: roda;  
+         animation-duration: 4s;
+ 
+         animation-iteration-count: infinite;
+  
+         animation-timing-function: linear; 
+    }
+    </style>
+<body>
+    <h1>Transformações e Transições </h1>
+    <div id="scale">
+        Este div tem 2 vezes o seu tamanho original
+        </div>
+        <div><img src="img/deisi.svg" alt="deisi"></div>
+        <div id="myDiv">
+            <img src="img/deisi.svg" alt="deisi" >
+        </div>
+
+        <h1>Animação CSS com keyframes</h1>
+
+        <div id="keyframe"></div>
+        
+        <p> Quando uma animação acaba, volta ao seu estilo original.</p>
+        <br>
+        <br>
+        <br>
+    <div id="deisiSpin"><img src="img/deisi.svg" ></div>
+
+</body>
+</html>
